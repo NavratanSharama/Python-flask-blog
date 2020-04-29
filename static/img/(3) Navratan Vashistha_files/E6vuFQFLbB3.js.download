@@ -1,0 +1,8 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["mdbPJ"]); }
+
+__d("CometUFIVideoPlayerContext",["React"],(function(a,b,c,d,e,f){"use strict";a=b("React").createContext;c=a([null,function(){}]);e.exports=c}),null);
+__d("useCometUFIVideoPlayerStateAndController",["CometUFIVideoPlayerContext","React"],(function(a,b,c,d,e,f){"use strict";var g=b("React").useContext;function a(){var a=g(b("CometUFIVideoPlayerContext")),c=a[0];a[1];return c}e.exports=a}),null);
+__d("VideoHomeTypedLoggerLite",["Banzai","generateLiteTypedLogger"],(function(a,b,c,d,e,f){"use strict";e.exports=b("generateLiteTypedLogger")("logger:VideoHomeLoggerConfig")}),null);
+__d("XVideoHomeFeedController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/watch/",{comment_id:{type:"FBID"},cursor:{type:"String"},ref:{type:"String"},t:{type:"Int"},v:{type:"String"},external_log_id:{type:"String"},q:{type:"String"}})}),null);
+__d("XVideoHomeLoginOrRegisterDialogController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/watch/login_or_register/dialog/",{queue_item_type:{type:"String"},next:{type:"String"},__asyncDialog:{type:"Int"}})}),null);
+__d("XVideoHomeShowController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/watch/{?section_id}/",{from:{type:"String"},section_id:{type:"String"},query:{type:"String"},video_id:{type:"String"},upstream_player_source:{type:"Enum",enumType:1},start_timestamp_s:{type:"Int"},autoplay_expanded:{type:"Bool",defaultValue:!1}})}),null);
